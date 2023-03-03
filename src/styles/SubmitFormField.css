@@ -1,0 +1,13 @@
+.submit-form-field {
+    background-color: rgb(148, 140, 32);
+    display: flex;
+    justify-content: center;
+}
+
+.submit-form-field button {
+    margin: 10px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
