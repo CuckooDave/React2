@@ -15,17 +15,15 @@ export function SignInPage(props) {
         setFormState(value);
     }
 
-    console.log(formState);
-
     return (
         <div className="sign-in-page">
             <div className="card">
                 <form className="sign-in-form" onSubmit={handleSubmit}>
                     <InputFormField label="Username"
                         type="text"
-                        onChange={handleUsernameChange} 
+                        onChange={handleUsernameChange}
                         value={formState} />
-                    <RandomNameButton onRandomName={handleUsernameChange}/>   
+                    <RandomNameButton onRandomName={handleUsernameChange} />
                     <SubmitFormField label="Sign in" />
                 </form>
             </div>

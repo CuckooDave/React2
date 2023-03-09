@@ -1,5 +1,5 @@
-const adjectives =['lijep', 'zgodan', 'pametan'];
-const nouns = ['davor', 'dave', 'ucenik'];
+const adjectives = ['lijep', 'zgodan', 'pametan'];
+const nouns = ['domagoj', 'domba', 'predavač'];
 
 function getRandomName() {
     const adjectiveIndex = Math.floor(Math.random() * adjectives.length);
@@ -9,13 +9,11 @@ function getRandomName() {
 }
 
 export function RandomNameButton(props) {
-
     function handleClick() {
-
         props.onRandomName(getRandomName());
     }
 
     return (
-        <button type="button" onClick={handleClick}>Get random name!</button>
+        <button type="button" onClick={handleClick}>Get random name</button>
     );
 }

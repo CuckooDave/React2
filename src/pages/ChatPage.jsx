@@ -7,8 +7,8 @@ export function ChatPage() {
         <div>
             Chat page
             <div className="message-list">
-                <Message author="Pero" text="Message1" />
-                <Message author="Djuro" text="Message2" />
+                <Message author="Domagoj" text="Lorem ipsum" />
+                <Message author="Udenko" text="Dolor sit amet" />
             </div>
             <form>
                 <InputFormField />
