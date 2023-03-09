@@ -11,6 +11,8 @@ const avatarImages = [
 export function AvatarFormField(props) {
     const [index, setIndex] = useState(0);
 
+    props.onChange(index);
+
     function addIndex() {
 
         if(index >= avatarImages.length -1) {
@@ -25,6 +27,7 @@ export function AvatarFormField(props) {
     
             if(index <= 0) {
                 setIndex(avatarImages.length -1);
+
             } else {
                 setIndex(index - 1);
             }

@@ -10,6 +10,7 @@ import { getRandomName } from "../library/random";
 
 export function SignInPage(props) {
     const [ formState, setFormState ] = useState(getRandomName());
+    const [avatar, setAvatar] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -20,11 +21,15 @@ export function SignInPage(props) {
         setFormState(value);
     }
 
+    function handleAvatarChange(value) {
+        setAvatar(value);
+    }
+
     return (
         <div className="sign-in-page">
             <div className="card">
                 <form className="sign-in-form" onSubmit={handleSubmit}>
-                    <AvatarFormField/>
+                    <AvatarFormField onChange={handleAvatarChange}/>
                     <InputFormField label="Username "
                         type="text"
                         onChange={handleUsernameChange}
