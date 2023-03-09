@@ -1,7 +1,8 @@
 .button {
     width: 100%;
-    background-color: black;
-    border-radius: none;
+    background-color: rgb(145, 9, 115);
+    border-radius: 100px;
     color: white;
     height: 40px;
+    border-color: rgb(240, 255, 27);
 }
